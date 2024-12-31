@@ -1,6 +1,6 @@
-* content projection
+# content projection
 
-** Problem
+## Problem
 
 We are creating a _barrier between the external template that knows the custom properties_ that need to be applied to the input and the plain HTML input itself.
 

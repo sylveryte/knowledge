@@ -1,6 +1,7 @@
-* Download a file binary from arraybuffer
+# Download a file binary from arraybuffer
 
-@code typescript
+```typescriptreact
+
   downloadBinaryData(data: ArrayBuffer, dataType: string, filename: string) {
     let binaryData = [];
     binaryData.push(data);
@@ -11,4 +12,4 @@
     downloadLink.click();
     downloadLink?.parentNode?.removeChild(downloadLink);
   }
-@end
+```
