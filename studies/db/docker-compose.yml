@@ -1,0 +1,12 @@
+version: '3.8'
+services:
+  db:
+    image: postgres:15.1
+    ports:
+      - '5432:5432'
+    environment:
+      POSTGRES_USER: sylveryte
+      POSTGRES_PASSWORD: study
+      POSTGRES_DB: farm
+    volumes:
+      - ~/.study/data/db:/var/lib/postgresql/data

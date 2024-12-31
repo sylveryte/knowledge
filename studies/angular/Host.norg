@@ -1,0 +1,15 @@
+* Host
+
+  - ( ) ToDO
+
+  @code typescript
+  @Component({
+    selector: 'app-model-comparison',
+    templateUrl: './model-comparison.component.html',
+    styleUrls: ['./model-comparison.component.scss'],
+    host: {
+      '(window:resize)': 'onResize($event)',
+    },
+  })
+  @end
+

@@ -1,0 +1,5 @@
+* Image using d3/image.nvim
+  syntax
+  .image ../image.jpg
+  .image ~/Pictures/Screenshot_20231029_163602.png
+  .image https://static-00.iconduck.com/assets.00/apps-neovim-icon-2048x2048-21jvoi4h.png

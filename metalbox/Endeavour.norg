@@ -1,0 +1,12 @@
+* Endeavour issue Arch linux issue
+
+** Keyring
+
+   @code bash
+   sudo pacman -Syy archlinux-keyring endeavouros-keyring
+   @end
+
+
+   ===
+___
+** Links

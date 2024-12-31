@@ -1,0 +1,10 @@
+{
+  "name": "postgres-study",
+  "adapter": "postgres",
+
+  "host": "localhost",
+  "port": 5000,
+  "user": "sylveryte",
+  "database": "farm",
+  "password": "study"
+}
