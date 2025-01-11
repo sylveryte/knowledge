@@ -1,4 +1,4 @@
-# Basics
+# Lua Basics
 
 ## Comments
 

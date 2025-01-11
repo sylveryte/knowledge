@@ -2,9 +2,9 @@
 
 ## Keyring
 
-@code sh
-   sudo pacman -Syy archlinux-keyring endeavouros-keyring
-@end
+```sh
+sudo pacman -Syy archlinux-keyring endeavouros-keyring
+eos-rankmirrors
+```
 
-
-___
+---

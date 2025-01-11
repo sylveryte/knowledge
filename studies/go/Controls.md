@@ -20,9 +20,9 @@
 
   ```go
   if n := rand.Intn(23); n%2 == 0 {
-  fmt.Println("accessible here ", n)
+    fmt.Println("accessible here ", n)
   } else {
-  fmt.Println("accessible here too ", n)
+    fmt.Println("accessible here too ", n)
   }
 
   ```
