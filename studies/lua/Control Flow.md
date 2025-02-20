@@ -1,5 +1,9 @@
 # Control Flow
 
+## If
+
+- if then
+
 ## For Loops
 
 - two types

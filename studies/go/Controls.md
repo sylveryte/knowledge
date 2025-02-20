@@ -70,10 +70,10 @@ for {
 
 ### for-range
 
-- value is a #copy#, will not modify compound types
+- value is a _copy_, will not modify compound types
 - can use {### break and continue}
 - can range slices,arrays,maps, ints too
-- note {:$/studies/go/DataTypes:# Maps 🗺️}[maps] iteration order varies
+- note [[DataTypes#Maps]] iteration order varies
 
   ```go
   // slice/arrays
@@ -117,7 +117,7 @@ for k, v := range uniqu {
 
 ## Switch
 
-- Unlike other langs switch in go is #useful#
+- Unlike other langs switch in go is **useful**
 - **Won't fall down** instead only matched will work,
   no need to break;
 - Var declared in a block is limited to that var only
