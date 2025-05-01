@@ -1,5 +1,6 @@
 # Functions
 
+- Color calling (:) sets first arg as `self` while (.) doesn't
 - Functions are ==first class== in lua
 - Can be made ==as values==
 
