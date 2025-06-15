@@ -20,7 +20,7 @@ sudo docker container prune #rm all stopped
 
 ### Build
 
-    `docker build --tag 'image_name'`
+    `docker build --tag 'image_name'` .
 
 ---
 
