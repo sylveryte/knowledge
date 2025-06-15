@@ -6,7 +6,7 @@ by Jon Bodner
 
 - [[Init]]
 - [[Controls]]
-- {:$/studies/go/DataTypes:}[Data types]
+- [[DataTypes#Basics of Go / golang]]
 - {:$/studies/go/Funtions:}[Funtions]
 - {:$/studies/go/Pointers:}[Pointers]
 - {:$/studies/go/Types Methods and Interfaces:}[Types Methods and Interfaces]
@@ -15,4 +15,5 @@ by Jon Bodner
 - {:$/studies/go/Examples:}[Examples]
 - {:$/studies/go/Modules Packages and Imports:}[Modules Packages and Imports]
 - {:$/studies/go/Go Tooling:}[Go Tooling]
--{:$/studies/go/Controls:}[Controls] {:$/studies/go/Goroutines:}[Goroutines Concurrency]
+- {:$/studies/go/Controls:}[Controls]
+- [[Goroutines#Goroutines Concurrency|Goroutines Concurrency]]

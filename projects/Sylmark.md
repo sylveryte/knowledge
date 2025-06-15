@@ -19,9 +19,9 @@ case of following
 ## Plan
 
 - [ ] Learn
-  - [ ] Scratch educationlsp
+  - [x] Scratch educationlsp 20% implemented rest understood
   - [ ] Story markdown lsp
-  - [ ] Lsp lib
+  - [-] Lsp lib no need
 - [ ] Development
   - [ ] [[Sylmark#MVP]]
 
@@ -32,7 +32,11 @@ we get following
 
 - Potentials
   - https://github.com/sourcegraph/jsonrpc2 3x 3m ⭐
-  - https://github.com/sourcegraph/go-lsp ==types== ⭐
+    - https://github.com/mattn/efm-langserver/blob/master/main.go
+    - https://github.com/sqls-server/sqls/blob/master/main.go
+    - https://github.com/getgauge/gauge/tree/master
+    - https://github.com/StyraInc/regal/blob/main/main.go
+  - https://github.com/sourcegraph/go-lsp
   - https://github.com/grpc/grpc-go 18h
   - https://github.com/grpc/grpc-web
   - https://github.com/creachadair/jrpc2 2x 3d

@@ -127,19 +127,19 @@ for k, v := range uniqu {
 
   ```go
   switch uniqu := map[string]bool{"fred": true, "monty": false}; len(uniqu) {
-  case 1,2,3: {
-  fmt.Println("len is within 4")
-  }
-  case 4: {
+    case 1,2,3: {
+                  fmt.Println("len is within 4")
+                }
+    case 4: {
   r:= 43
-  fmt.Println("len is exaclty 4",r)
-  }
-  case 5,6: {
-  fmt.Println("len greater then 4, r not accessible here")
-  }
-  default:{
-  fmt.Println("this is defualt")
-  }
+    fmt.Println("len is exaclty 4",r)
+            }
+    case 5,6: {
+                fmt.Println("len greater then 4, r not accessible here")
+              }
+    default:{
+              fmt.Println("this is defualt")
+            }
   }
   ```
 
