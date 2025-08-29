@@ -6,7 +6,7 @@ this gives basic knowledge
 
 ### The zero value
 
-short [zv]{\*\*\* The zero value}
+short **zv**
 
 - Like many langs, go assigns a zero value to variables that are declared but not assigned
 
@@ -182,6 +182,8 @@ standard lib provides two functions
 
 #### Subslices
 
+- Sublices are `k:=[2,3,5,6]` then `k[0:2]` will be `[2,3]`
+- Similarily `k[1:]` will be `[3,5,6]`
 - Subslices are ref to original slice and _not_ a copy
 - Avoid overriding by not appending in sub slices
 - using {\*\*\*\* copy} on small slice will copy as many,
@@ -220,7 +222,11 @@ tw["lp"] = 3
 fmt.Println(tw["lp"]) //3
 ```
 
-- in context of {\* comma ok idiom} tell the diff between a key,
+- IMPORTANT go stores value copies for struct like types
+  - If you assign a struct to map and then modify, it will
+    not stick, because while assignment it makes a copy and assigns it
+  - Same with getting value out is also a copy
+- in context of [[DataTypes#comma ok idiom|comma ok]] tell the diff between a key,
   thats associated with 0 or key not in the map
   ```go
   v, ok := tw["panda"]

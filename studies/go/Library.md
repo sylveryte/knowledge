@@ -13,4 +13,4 @@ go: github.com/sylveryte/tree-sitter-sylmark@v0.1.3: verifying module: github.co
   because _someone tried to get that version_ before it was
   published and **poisoned** cache, **wait 30mins** for
   fresh cache.
-- Quick workaround is to use `GOPRIVATE`
+- Quick workaround is to use `GOPRIVATE=github.com/sylveryte/tree-sitter-sylmark go get github.com/sylveryte/tree-sitter-sylmark@v0.1.3`

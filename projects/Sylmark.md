@@ -5,25 +5,16 @@ case of following
 
 ## Features
 
-### MVP
-
-- [ ] Linking
-  - [ ] Wiki style `[[2025-04-April]]]`
-  - [ ] Headers within files `[[2025-04-April#Goals for this month?]]`
-- [ ] File link embedding `![](./../stickers/feb.png)`
-  - [ ] Image Rendering linking
-- [ ] Autocompletion
-  - [ ] Wiki files
-  - [ ] Wiki headers
+- [Project link](https://codeberg.org/sylveryte/sylmark)
 
 ## Plan
 
-- [ ] Learn
+- [x] Learn
   - [x] Scratch educationlsp 20% implemented rest understood
-  - [ ] Story markdown lsp
+  - [>] Story markdown lsp // skipped
   - [-] Lsp lib no need
-- [ ] Development
-  - [ ] [[Sylmark#MVP]]
+- [x] Development
+  - [x] [[Sylmark#MVP]]
 
 ## Choose tools
 
@@ -43,3 +34,18 @@ we get following
   - https://github.com/go-language-server/jsonrpc2 2x 3y
   - https://github.com/jdbaldry/go-language-server-protocol 4y
   - https://github.com/yinfei8/jrpc2 4y
+
+## Notes of internal working
+
+- glinkstore
+
+```js
+const glinkstore = {
+ [target] = {
+  [uri] = {
+      defs:loc[],
+      refs:loc[]}
+    }[]
+  }[]
+}
+```
