@@ -2,6 +2,8 @@
 
 by Jon Bodner
 
+#golang
+
 ## Contents
 
 - [[Init]]

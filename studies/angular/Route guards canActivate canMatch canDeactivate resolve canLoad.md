@@ -1,5 +1,6 @@
 # Route guards canActivate canMatch canDeactivate resolve canLoad
 
+#angular
 [Preventing unauthorized access](https://angular.io/guide/router#preventing-unauthorized-access)
 NOTE: _Use functional guards instead of class based_
 

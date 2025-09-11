@@ -1,5 +1,7 @@
 # Download a file binary from arraybuffer
 
+#angular
+
 ```typescriptreact
 
   downloadBinaryData(data: ArrayBuffer, dataType: string, filename: string) {

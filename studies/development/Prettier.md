@@ -1,5 +1,7 @@
 # Prettier
 
+#javascript
+
 ## Setup lint-staged prettier husky
 
 - `npx prettier  '**/*.{ts,js,css,html,json}' --write`

@@ -1,5 +1,8 @@
 # Treesitter Development
 
+#neovim
+#linux
+
 ## Generate parser from grammer
 
 ```sh

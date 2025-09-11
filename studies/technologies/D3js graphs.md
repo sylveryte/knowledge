@@ -1,6 +1,7 @@
 # D3 graphs
 
-{https://d3js.org/}[link]
+#javascript
+[link](https://d3js.org/)
 
 # Learn Basics
 
@@ -115,8 +116,8 @@ xScale = d3.scaleTime().domain([Date Date]).range(0,400)
 - can give how many ticks, it's approximate merely suggestion
   or exact ticks values
 - can format tick labels
-- eg {:$/studies/technologies/d3js examples:\*\* Basic bar chart with label and yaxis with line indicating projecting on yscale}[Basic bar chart with label and yaxis with line indicating projecting on yscale]
-- eg
+- eg [Basic bar chart with label and yaxis with line indicating projecting on yscale]
+- eg [[Basibarchart]]
 
 ```typescriptreact
 const ax = d3.axisLeft(linscalex);
@@ -160,7 +161,7 @@ d3.active(this).attr("fill", "white").transition();
 )
 ```
 
-- eg {\*\* Basic bar chart with animation and upate}
+- eg [[d3js examples#Basic bar chart with animation and upate]]
 
 ```typescriptreact
 svg
@@ -439,4 +440,4 @@ one that obsidian uses
 
 ---
 
-Origin: {:$/book/Interactive Data Visualization for the Web, 2nd edition 2017:}[Interactive Data Visualization for the Web, 2nd edition 2017]
+Origin: [[Interactive Data Visualization for the Web, 2nd edition 2017]]

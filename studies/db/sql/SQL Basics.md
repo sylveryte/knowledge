@@ -1,5 +1,7 @@
 # SQL Basics
 
+#db
+
 ## DDL Data Definition Language
 
 - [ ] CREATE

@@ -1,2 +1,3 @@
 # Tauri
-  Dependency: {:$/studies/rust/Basics:}[Rust basics] all of it
+
+Dependency: [[Basics#Rust basics]] all of it

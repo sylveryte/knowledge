@@ -1,6 +1,6 @@
 # Obsidian open md in neovim
 
-#obsidian #neovim
+#obsidian #neovim #linux
 
 ## open it
 

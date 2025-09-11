@@ -1,5 +1,7 @@
 # Farm database Postgresql
 
+#db
+
 - sqls config {/ ~/.config/sqls/config.yml}
 
 ```yaml

@@ -1,5 +1,6 @@
 # A Smarter Way to Learn JavaScript
 
+#javascript
 by mark myers
 
 ## Topics covered:

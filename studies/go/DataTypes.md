@@ -406,4 +406,4 @@ err.Error.Message = "Something"
 
 ---
 
-Origin: {:$/book/Learning Go:}[Learning Go]
+[[Learning Go]]
