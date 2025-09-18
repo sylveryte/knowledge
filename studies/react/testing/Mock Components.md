@@ -1,5 +1,8 @@
 # Mock Components
 
+#testing
+#react
+
 ```tsx
 vi.mock("../kg/simple-kg-icon", () => ({
   SimpleKgIcon: vi.fn(() => <div>Icon</div>),

@@ -1,4 +1,4 @@
-# Controls
+# Go Controls
 
 ## Variable shadowing
 
@@ -123,7 +123,7 @@ for k, v := range uniqu {
 - Var declared in a block is limited to that var only
 - empty case means nothing will happen
   `case 6;`
-- has same statement expression as in [[Controls#If|If]] && [[Controls#For|For]]
+- has same statement expression as in [[Go Controls#If|If]] && [[Go Controls#For|For]]
 
   ```go
   switch uniqu := map[string]bool{"fred": true, "monty": false}; len(uniqu) {
@@ -199,4 +199,3 @@ if k < 20 {
 ---
 
 [[Learning Go]]
-[[Controls]]

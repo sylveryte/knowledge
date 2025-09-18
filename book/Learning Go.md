@@ -6,16 +6,15 @@ by Jon Bodner
 
 ## Contents
 
-- [[Init]]
-- [[Controls]]
-- [[DataTypes#Basics of Go / golang]]
+- [[Go Init]]
+- [[Go Controls]]
+- [[Go DataTypes#Basics of Go / golang]]
 - [[Functions]]
-- [[Pointers]]
+- [[Go Pointers]]
 - {:$/studies/go/Types Methods and Interfaces:}[Types Methods and Interfaces]
 - {:$/studies/go/Generics:}[Generics]
-- {:$/studies/go/Errors:}[Errors]
+- [[Go Errors]]
 - {:$/studies/go/Examples:}[Examples]
 - {:$/studies/go/Modules Packages and Imports:}[Modules Packages and Imports]
 - {:$/studies/go/Go Tooling:}[Go Tooling]
-- {:$/studies/go/Controls:}[Controls]
-- [[Goroutines#Goroutines Concurrency|Goroutines Concurrency]]
+- [[Go Goroutines]]

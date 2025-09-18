@@ -9,8 +9,8 @@
   `z := 5 + *pointerToX`
 - program will panic if `nil` pointer is `dereferenced`
 - make sure the pointer you're `dereferencig` is _not nil_
-- built in fx `new` returns a pointer to [[DataTypes#The zero value|zv]] variable
-- use a & before a [[DataTypes#Struct]] literal to create a pointer instance
+- built in fx `new` returns a pointer to [[Go DataTypes#The zero value]] variable
+- use a & before a [[Go DataTypes#Struct]] literal to create a pointer instance
 
 ## Pointers indicate a mutable parameter
 

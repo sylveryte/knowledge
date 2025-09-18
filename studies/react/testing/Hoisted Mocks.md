@@ -1,4 +1,6 @@
 # Hoisted Mocks
+#testing
+#react
 
 To properly mock say `useQuery` and have diff return values
 on each test

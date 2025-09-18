@@ -1,5 +1,17 @@
 # Time
 
+#golang
+
+## Diff
+
+- `t2.Sub(t1)`
+- `time.Since(t1)`
+
+## Display Duration
+
+- any `time.Duration` use methods
+- `dur.Milliseconds()`
+
 ## Find elapsed time till now
 
 ## Convert the timestamp to the specified timezone

@@ -18,7 +18,7 @@ is code literal value
 
 - number defaults to int
 - Literals are untyped
-  -- go waits for use to determine the type, (ofcourse only compatible)
+  - go waits for use to determine the type, (ofcourse only compatible)
 
 #### Boolean
 
@@ -103,7 +103,7 @@ x, y := 40, "hello"
 
 - `[3]int` makes a _array_ vs `[]int` makes a _slice_
 - don't use array unless you know the size,
-- check in terms of pointers {:$/studies/go/Pointers:\*\* Difference between slices and maps}[Difference between slices and maps]
+- check in terms of pointers [[Go Pointers#Difference between slices and maps]]
 - use slice it's array but with blank `[]int`
   ```go
   var k = [3]int{23, 4, 5} // [3]int type array
@@ -178,7 +178,9 @@ standard lib provides two functions
 
 ##### Sort
 
-- {:$/studies/go/Funtions:\*\*\* For eg sorting}[Slice sorting]
+todo should be #For sorting
+
+- [[Go Funtions#Declare]]
 
 #### Subslices
 
