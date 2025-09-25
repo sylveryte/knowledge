@@ -13,3 +13,8 @@
 - Quick mapping
   - Sometimes you want to quickly make a map and use it for the session
     `map <M-q> :echo "hi" -- alt +q` or `vmap imap`
+
+## Mapping
+
+- see where a map is set
+- `nvim -V1` then inside nvim `:verb map`

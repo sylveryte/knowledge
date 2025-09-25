@@ -1,5 +1,7 @@
 # Initialize project/module
 
+#golang
+
 - `go mod init example/hello`
 - create `hello.go`
 

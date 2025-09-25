@@ -1,5 +1,7 @@
 # Errors
 
+#golang
+
 ## Basic
 
 - Go expects the developer to handle the Errors

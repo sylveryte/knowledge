@@ -1,5 +1,7 @@
 # Pointers
 
+#golang
+
 - A pointer is a variable that holds the location of a memory.
 - Many things that `c` pointers can be done,
   are _not_ available in `go` including _pointer arithematics_

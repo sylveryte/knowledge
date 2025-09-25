@@ -1,5 +1,7 @@
 # Basics of Go / golang
 
+#golang
+
 this gives basic knowledge
 
 ## Data types
@@ -184,11 +186,12 @@ todo should be #For sorting
 
 #### Subslices
 
+- Sublices **before and after [before:after] indexers are excluding**
 - Sublices are `k:=[2,3,5,6]` then `k[0:2]` will be `[2,3]`
 - Similarily `k[1:]` will be `[3,5,6]`
 - Subslices are ref to original slice and _not_ a copy
 - Avoid overriding by not appending in sub slices
-- using {\*\*\*\* copy} on small slice will copy as many,
+- using [[#copy]] on small slice will copy as many,
   limited by whichever slice is smaller
 
 ### Strings bytes and runes
@@ -207,7 +210,7 @@ todo should be #For sorting
 - declare `var nilMap map[string]int`
 - with size `ages := make(map[int][]string,10)`
 - grow automatically
-- check in terms of pointers {:$/studies/go/Pointers:\*\* Difference between slices and maps}[Difference between slices and maps]
+- check in terms of pointers [[Go Pointers#Difference between slices and maps]]
 - [zv] is nil
 
 ### assign
@@ -291,7 +294,7 @@ julia := person{
 
 - [zv] is 0 `{0}`
 - no diff between `var fred person` and `var fred person = {}`
-- no diff between assiging an empty struct vs no value / [zv]
+- no diff between assiging an empty struct vs no value [[#The zero value|zv]]
 
 ### nested structs
 
@@ -386,12 +389,12 @@ err.Error.Message = "Something"
 
 - any type is simply `interface{}` which is an empty interface
 - empty interface can store any value that has 0 or more methods
-- to use {:$/studies/go/Types Methods and Interfaces:\*\* Type assertion}[Type assertion]
-- to use {:$/studies/go/Types Methods and Interfaces:\*\* Type Switch}[Type Switch]
+- to use [[Go Types Methods and Interfaces#Type assertion|Type assertion]]
+- to use [[Go Controls#Type Switch|Type Switch]]
 
 ## Channels
 
-- Used for concurrency {:$/studies/go/Goroutines:}[Channels]
+- Used for concurrency [[Go Goroutines#Channels]]
 
 ## comma ok idiom
 

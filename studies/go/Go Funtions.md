@@ -1,4 +1,6 @@
-# Funtions
+# Go Funtions
+
+#golang
 
 ## Declare
 

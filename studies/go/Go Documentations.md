@@ -1,5 +1,7 @@
 # Documentations
 
+#golang
+
 - Go has its own format for writing comments, that are
   automagically converted into docs
 
@@ -7,7 +9,7 @@
 
 - Place the comment directly before the item being
   documented, with no blanks
-- Start each line with _//_ \/\* \*\/ is descouraged
+- Start each line with `//` `\* */` is descouraged
 - The first word should be the symbol (type func const...)
   name. You can put A or An if you want
 - Use blank line with // to make multiple paragraph

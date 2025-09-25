@@ -1,9 +1,11 @@
 # Go Controls
 
+#golang
+
 ## Variable shadowing
 
 - blocks shadow variable with same name from outer var
-- Since {## Universe Block} exists, shadowing is possible for packages & other important entities as well
+- Since [[#Universe Block]] exists, shadowing is possible for packages & other important entities as well
 
 ## Universe Block
 
@@ -71,9 +73,9 @@ for {
 ### for-range
 
 - value is a _copy_, will not modify compound types
-- can use {### break and continue}
+- can use [[#break and continue]]
 - can range slices,arrays,maps, ints too
-- note [[DataTypes#Maps]] iteration order varies
+- note [[Go DataTypes#Maps]] iteration order varies
 
   ```go
   // slice/arrays
@@ -92,10 +94,10 @@ for {
   }
   ```
 
-- **should** use for {:$/studies/go/DataTypes:### Strings and Runes}[Strings] type,
-  it give you multi byte {:$/studies/go/DataTypes:### Strings and Runes}[rune] as one
+- **should** use for [[Go DataTypes#Strings and Runes]] type,
+  it give you multi byte [[Go DataTypes#Strings and Runes|runes]] as one
 - it iterates over runes instead of bytes
-- there's also for-range for {:$/studies/go/Goroutines:### Using for-range}[Channels]
+- there's also for-range for [[Go DataTypes#Channels|Channels]]
 
 ### break and continue
 
@@ -145,13 +147,13 @@ for k, v := range uniqu {
 
 - go has `fallthrough` key for default switch behavior like other langs,
   but you shouldnt be using it
-- if switch is inside a {## For}[for] then put a label for loop,
-  go assumes a {### break and continue}[break] is for breaking the case
+- if switch is inside a [[#For|for]] then put a label for loop,
+  go assumes a [[#break and continue|break]] is for breaking the case
 
 ### Blank switch
 
 - can have a blank switch no need for a value to compare with
-- is very #powerful#
+- is very **powerful**
 - for above swith you can put condition inside the case condi
   ```go
   j := []int{3, 4, 5}
@@ -177,7 +179,7 @@ for k, v := range uniqu {
 
 ### Type Switch
 
-{:$/studies/go/Types Methods and Interfaces:## Type Switch}[Type Switch]
+[[Go Types Methods and Interfaces#Type Switch]]]]
 
 ## Goto
 

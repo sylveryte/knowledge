@@ -1,5 +1,7 @@
 # Everyting you need to start writing lua
 
+#lua
+
 by [[TJ DeVries]]
 
 1. [[Introduction]]

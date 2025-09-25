@@ -1,0 +1,205 @@
+# Types Methods and Interfaces
+
+## User defined types
+
+- user-defined type, same with [[Go DataTypes#Struct]]
+
+```go
+type Score int
+type Converter func(string)Score
+type TeamScores map[string]Score
+```
+
+- one might # cool think why would someone do `type money int`,
+  the answer is [[#types are executable documentation]] 🌳
+
+### types are executable documentation
+
+- if you have same data underlying but diff ops,
+  make 2 types [[#type declaration is not inheritance]]
+
+### iota is for enums sometimes
+
+- don't think, need to reevaluate later 
+
+## Methods
+
+- looks like [[Go Funtions]] declaration with,
+  one addition the `receiver` specification
+- can have either `value receiver` or `pointer receiever`
+  okay
+- methods can be defined _only at the same pkg block_ level,
+  can be on separate file but same package
+
+### Pointer Receivers and Value Receivers
+
+- the same rules of [[Go Funtions]] apply to methods
+- If a method as `pointer receiver` then common practice is,
+  to have all methods `pointer receiver`, even the ones not modifying
+- when you call `pointer receiver` from a value type
+  go automatically takes the address of pointer
+  in case of `c:=Person{}` `c.increment()` => `&c.increment()`
+- when you call `value receiver` on a pointer variable,
+  go automatically dereferences it
+  in case of `c:= &Person{}` `c.increment()` => `*c.increment()`
+- _do not_ write getters and setters,
+  go incourages to directly modify fields
+
+```go
+type Person struct {
+  fname string
+  lname string
+  age   int
+}
+// here if it was Person then it would send a copy of person instance
+func (p *Person) increment() {
+  p.age++
+}
+func (p Person) string() string {
+  return p.fname + " " + p.lname + " " + fmt.Sprint(p.age) + "years old"
+}
+func main() {
+  var p Person
+  p = Person{
+    fname: "jon",
+    lname: "man",
+    age:   20,
+  }
+  p.increment()
+  fmt.Println(p.string()) // jon man 21 yers oldd
+}
+```
+
+### Code your methods for `nil` instances
+
+- when calling `method` on a `nil` instances,
+  go actually tries to invoke the function
+  - if it's a method with `value receiver` it panics,
+    since there is no value to point at
+  - if it's a method with `pointer receiver` it may work,
+    if it's written to handle possibility of `nil` instance
+- some time this go behavior can make some implmentation easy
+
+### Methods are functions
+
+- Methods are functions too, with instance as default first param
+  oviously, can assign a method `f2 := beetle.horn` and call it `f2(beetle)`
+
+```go
+beetl.horn()
+f1 := beetl.horn
+f1()  //still attached to beetl
+```
+
+### Functions vs Methods
+
+- when logic is tied to data, method
+- when logic is only dependent on input, function
+
+### Example
+
+- see [[example 2 binary tree]]
+
+## Inheritance
+
+### type declaration is not inheritance
+
+- when you type declare another type,
+  you get the data but not method
+- `type truck car` here,
+  truck gets the state fields but not methods
+- see [[example 3 type inheritance]]
+
+## Use Embeding for composition
+
+```go
+bumbleb := autobot{
+  car:   car{wheels: 4, color: "yellow"},
+  name:  "bumble bee",
+  color: "orange",
+}
+
+bumbleb.honk() // honk yellow //defined on car
+fmt.Println(bumbleb.color) //orange
+fmt.Println(bumbleb.car.color) //yellow
+fmt.Println(bumbleb.wheels)
+```
+
+## Type assertion
+
+- first type to find specific concrete type of,
+  if a type implements another interface
+- sometimes you don't know the type then use [[Go DataTypes#any type|any type]] if type assertion is wrong code _will panic_
+- use [[Go DataTypes#comma ok idiom|comma ok idiom]] for safety
+- to assert type use
+- you can assert with [[#User defined types]] too
+  [types_interface_ultimate](./action/types_interface_ultimate/main.go)
+  [type_assertion](./action/type_assertion/main.go)
+
+```go
+l := LogAdapter(LogOutput)
+
+var g any
+k := 121
+g = k + 1
+gi, ok := g.(int)
+if ok {
+  fmt.Println(gi)
+}
+```
+
+## Type Switch
+
+- second type to find specific concrete type of,
+  if a type implements another interface
+- like in actual switch statements [[Go Controls#Switch]]
+- when an interface could be one of multiple possible types, use a type
+  full [type_switch](./action/type_switch/main.go)
+
+```go
+switch j := i.(type) {
+case nil:
+  fmt.Println("i is nil, type of j is any", j)
+case int:
+  fmt.Println("type is int", j)
+}
+```
+
+## Use Type Assertion and Type Switches Sparingly
+
+- type assertion helps to find if a concrete type of the interface,
+  also implements another interface
+- type assertion or type switch /cannot match wrapped errors/
+  use `errors.Is` `errors.As`
+
+## Function Types are a Bridge to Interfaces
+
+- Go allows methods on _any_ [[#User defined types]] _even on functions_
+- They allow functions to implement interfaces
+- Use this if your functions depends on many functions and states
+  else for small usecase function as argument works
+- can be seen in example
+  [types_interface_ultimate](./action/types_interface_ultimate/main.go)
+  check `LogAdapter`
+
+## Implicit Interfaces Make Dependency Injection Easier
+
+- Go's one of the powerful features is implicit interface
+- Interfaces are reponsibility of the consumer
+- If an interface mathches the concrete type even partially,
+  we can assign concrete type to the interface
+- See ultimate example of all types and interfaces
+  check `Logic`
+  [ultimate](./action/types_interface_ultimate/main.go)
+
+## Go isn't Particularly Object Oriented (and That's Great)
+
+- Go is not functional
+- Nor it is Object Oriented
+- Best paradigm description for go is,
+  _it is practical_
+
+---
+
+[exercise](./action/type_interface_exercise/main.go)
+[[Learning Go]]
