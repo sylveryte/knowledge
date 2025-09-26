@@ -1,5 +1,7 @@
 # Types Methods and Interfaces
 
+#golang
+
 ## User defined types
 
 - user-defined type, same with [[Go DataTypes#Struct]]
@@ -98,7 +100,7 @@ f1()  //still attached to beetl
 
 ### Example
 
-- see [[example 2 binary tree]]
+- see [[Go Examples#example 2 binary tree|example 2 binary tree]]
 
 ## Inheritance
 
@@ -108,7 +110,7 @@ f1()  //still attached to beetl
   you get the data but not method
 - `type truck car` here,
   truck gets the state fields but not methods
-- see [[example 3 type inheritance]]
+- see [[Go Examples#example 3 type inheritance|example 3 type inheritance]]
 
 ## Use Embeding for composition
 

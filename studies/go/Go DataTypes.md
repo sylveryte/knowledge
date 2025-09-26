@@ -231,7 +231,7 @@ fmt.Println(tw["lp"]) //3
   - If you assign a struct to map and then modify, it will
     not stick, because while assignment it makes a copy and assigns it
   - Same with getting value out is also a copy
-- in context of [[DataTypes#comma ok idiom|comma ok]] tell the diff between a key,
+- in context of [[#comma ok idiom|comma ok]] tell the diff between a key,
   thats associated with 0 or key not in the map
   ```go
   v, ok := tw["panda"]

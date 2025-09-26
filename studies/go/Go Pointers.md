@@ -1,4 +1,4 @@
-# Pointers
+# Go Pointers
 
 #golang
 
@@ -11,8 +11,8 @@
   `z := 5 + *pointerToX`
 - program will panic if `nil` pointer is `dereferenced`
 - make sure the pointer you're `dereferencig` is _not nil_
-- built in fx `new` returns a pointer to [[Go DataTypes#The zero value]] variable
-- use a & before a [[Go DataTypes#Struct]] literal to create a pointer instance
+- built in fx `new` returns a pointer to [[Go DataTypes#The zero value|zv]] variable
+- use a & before a [[Go DataTypes#Struct|Struct]] literal to create a pointer instance
 
 ## Pointers indicate a mutable parameter
 
@@ -24,15 +24,15 @@
 
 ## Pointer passing performance
 
-- vs [[Funtions#Go is call by value]]
+- vs [[Go Funtions#Go is call by value]]
 - using pointer to pass struct as param/return,
   is more performant when struct is very large (>10MB)
 
 ## Difference between slices and maps
 
-- Slice and [[DataTypes#Maps]] pass the value,
+- Slice and [[Go DataTypes#Maps|Maps]] pass the value,
   it's just that the value happens to be a **pointer**
-- the _special case_ of [[DataTypes#Arrays and slices]] is that it stores,
+- the _special case_ of [[Go DataTypes#Arrays and slices|Arrays and slices]] is that it stores,
   a struct of 3 values `(ptr,len int,cap int)`
   -- on passing it is copied, and when length is modified,
   it's modified in the called fx's new var not original.
@@ -44,7 +44,7 @@
 - in case of a for loop you override a same value multiple times
   `for i := range(100){ i = i*4; fmt.prin...(i)}`
 - in this case you'll _create 100s of allocations_,
-  and burden the [[Pointers#Garbage collector|gc]]
+  and burden the [[#Garbage collector|gc]]
 - better to use a slice as a buffer,
   that will hold the diff data in same location
 - eg. while reading a file

@@ -1,5 +1,7 @@
 # Ownership
 
+#rust
+
 Set of rust rules that manages memory and makes it memory safe.
 
 ## The stack and the heap
@@ -32,3 +34,5 @@ Set of rust rules that manages memory and makes it memory safe.
 - string literal is static _not_ String
 - data is on heap, is dynamic length
 - eg `let mut s = String::from("hello")`
+
+---

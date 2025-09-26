@@ -2,8 +2,6 @@
 
 #golang
 
-#golang
-
 ## Pulling library fresh published error
 
 ```sh

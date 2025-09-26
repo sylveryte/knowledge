@@ -1,5 +1,7 @@
 # Practice programs to be written
 
+#rust
+
 ## [[Basics]]
 
 ![](./../../../stickers/laptop.png)

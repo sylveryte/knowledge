@@ -173,10 +173,6 @@ for k, v := range uniqu {
   }
   ```
 
-```
-
-```
-
 ### Type Switch
 
 [[Go Types Methods and Interfaces#Type Switch]]]]

@@ -3,15 +3,12 @@
 #golang
 
 - Arithmetic
-
   - `+ - * / % ++ --`
 
 - Logical
-
   - `&& || !`
 
 - Bitwise
-
   - `&` AND
   - `|` OR
   - `^` XOR
@@ -19,11 +16,8 @@
   - `>>` signed right shift
 
 - Assignments
-
   - `= += -= *= /= %=  &= |= ^= >>= <<=`
   - expansion is `x = x / y`
   -
 
 ---
-
-#golang

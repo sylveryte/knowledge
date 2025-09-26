@@ -115,7 +115,7 @@ errs := fmt.Errorf("1 %w, 2 %w",er1,er2)
 ### Is
 
 - To check whether the returned error or any errors that
-  it wraps match a specific {\*\* Sentinel Errors}[sentinel error] instance, use
+  it wraps match a specific [[#Sentinel Errors]] instance, use
   `errors.Is` ( `error`, `instance you're comparing it against`)
   `if errors.Is(err, os.ErrNotExist)`
 - By default `Is` uses == to compare each wraped with the

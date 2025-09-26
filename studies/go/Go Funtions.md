@@ -18,7 +18,7 @@
 
 ## Simulating named and optional params
 
-- make a person [[DataTypes#Struct]]
+- make a person [[Go DataTypes#Struct|Struct]]
 - use optional as well
   ```go
   fullname(Person{firstname: "ram",lastname: "swar"})
@@ -81,7 +81,7 @@
   return result, remainder, err
   }
   ```
-- On invalid input it returns the [[DataTypes#The zero value]] values immediately
+- On invalid input it returns the [[Go DataTypes#The zero value|zv]] values immediately
 
 ## Blank return do not use
 
@@ -100,7 +100,7 @@
 
 ### For eg sorting
 
-- inplace sorting remember {\*\* Go is call by value}
+- inplace sorting remember [[#Go is call by value]]
 
 ```go
 sort.Slice(p, func(i,j int)bool{return p[i].name<p[j].name})
@@ -117,7 +117,7 @@ sort.Slice(p, func(i,j int)bool{return p[i].name<p[j].name})
   the derered statement runs at the end of function
 - can use defer with multiple statement, runs in LIFO
 - tip can use intermediately called function to group actions
-- best use of {\*\* Named return values} can be used with defer,
+- best use of [[#Named return values]] can be used with defer,
   to provide context to defered actions (eg: error)
   ```go
   //simple cat uses defer to close file
@@ -144,7 +144,7 @@ sort.Slice(p, func(i,j int)bool{return p[i].name<p[j].name})
   }
   ```
 - _pro tip_ you can use `defer` to rollback or commit based on error,
-  with {\*\* Named return values} or declare value beforehand, no issue
+  with [[#Named return values]] or declare value beforehand, no issue
 - another _pro tip_ can make helper functions for eg,
   readFile that returns closer fx, file and error,
   then you defer the closer function right away
@@ -152,7 +152,7 @@ sort.Slice(p, func(i,j int)bool{return p[i].name<p[j].name})
 ## Go is call by value
 
 - always passes a _copy_ of variable but 🍉
-- paases `ref` for [[DataTypes#Maps]]]]
+- paases `ref` for [[Go DataTypes#Maps]]]]
 - can modify values, but cannot grow size of [[DataTypes#Arrays and slices]]
 - example
   ```go
